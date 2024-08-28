@@ -23,7 +23,7 @@ public class Country {
     @Column(name = "currency")
     private String currency;
     @Column(name = "population")
-    private int population;
+    private Long population;
     @Column(name = "latitude")
     private String latitude;
     @Column(name = "longitude")
@@ -32,7 +32,7 @@ public class Country {
     public Country() {
     }
 
-    public Country(int countryId, String countryName, String currency, int population, String latitude,
+    public Country(int countryId, String countryName, String currency, Long population, String latitude,
             String longitude) {
         this.countryId = countryId;
         this.countryName = countryName;
@@ -67,11 +67,11 @@ public class Country {
         this.currency = currency;
     }
 
-    public int getPopulation() {
+    public Long getPopulation() {
         return population;
     }
 
-    public void setPopulation(int population) {
+    public void setPopulation(Long population) {
         this.population = population;
     }
 
